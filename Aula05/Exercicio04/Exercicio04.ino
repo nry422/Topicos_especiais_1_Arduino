@@ -37,7 +37,7 @@ int   sorteio = random(1, 60);
 
    
   
-    if (liga == 1) {
+    if (liga == 0) {
       click++;
     }
 
@@ -62,22 +62,33 @@ int   sorteio = random(1, 60);
   if (click >= 2) { lcd.print(n2); lcd.print(" "); }
   if (click >= 3) { lcd.print(n3); lcd.print(" "); }
   if (click >= 4) { lcd.print(n4); lcd.print(" "); }
-  if (click >= 5) { lcd.print(n5); lcd.print(" "); }
-  }
+  if (click >= 5) { lcd.print(n5); lcd.print(" "); }  
+     }
   else {
     lcd.clear();
-    lcd.setCursor(0, 0);
-    lcd.print("Sorteio Finalizado");
-    lcd.setCursor(2, 1);
-    lcd.print("ACABOU!!!!!");
+    lcd.setCursor(0,0);
+    lcd.print("Numeros sorteados");
+    lcd.setCursor(0,1);
+     lcd.print(n1); lcd.print(" ");
+     lcd.print(n2); lcd.print(" ");
+     lcd.print(n3); lcd.print(" ");
+     lcd.print(n4); lcd.print(" ");
+     lcd.print(n5); lcd.print(" ");
+     
     
-    
-    while(true);
   }
+  
+ 
+    
+    
+    
+    
+   
+  
   
   
 
-  delay(10);
+ 
 
 
         
@@ -88,7 +99,7 @@ int   sorteio = random(1, 60);
   
  
   
- delay(100);
+ delay(300);
  lcd.clear();
 
    
